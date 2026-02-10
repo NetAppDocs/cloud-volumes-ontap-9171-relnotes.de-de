@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.17.1 beinhaltet eine neue Verbesserung. 
+---
+= Was ist neu in Cloud Volumes ONTAP 9.17.1
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.17.1 enthält neue Verbesserungen.
+
+Neue Cloud Volumes ONTAP-Funktionen werden auch in den neuesten Versionen der NetApp Console eingeführt. Weitere Informationen finden Sie unter Neuerungen in https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^] der Console.
+
+
+
+== 9.17.1 P3 (22. Dezember 2025)
+
+Der Cloud Volumes ONTAP 9.17.1 P3-Patch steht jetzt für ein Upgrade in AWS, Azure und Google Cloud zur Verfügung. Die NetApp Console fordert Sie auf, Ihre bestehenden Systeme auf diese Patch-Version zu aktualisieren.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P3["Sehen Sie sich die Liste der im P3 Patch behobenen Fehler an"^] (NetApp Support Site-Anmeldung erforderlich).
+
+
+
+== 9.17.1 P2 (04. Dezember 2025)
+
+Der Cloud Volumes ONTAP 9.17.1 P2 Patch ist jetzt für das Upgrade in AWS, Azure und Google Cloud verfügbar. Die Console wird Sie auffordern, Ihre bestehenden Systeme auf diese Patch-Version zu aktualisieren.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P2["Sehen Sie sich die Liste der im P2 patch behobenen Fehler an"^] (NetApp Support Site-Anmeldung erforderlich).
+
+
+
+== 9.17.1 P1 (04. November 2025)
+
+Der Cloud Volumes ONTAP 9.17.1 P1 Patch steht jetzt für die Bereitstellung und das Upgrade in AWS, Azure und Google Cloud zur Verfügung. Die Console fordert Sie auf, Ihre bestehenden Systeme auf diese Patch-Version zu aktualisieren.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P1["Sehen Sie sich die Liste der im P1 Patch behobenen Fehler an"^] (NetApp Support-Website-Anmeldung erforderlich).
+
+
+
+== Upgrade-Hinweise
+
+Lesen Sie diese Hinweise, um mehr über das Upgrade auf diese Version zu erfahren.
+
+
+
+=== So führen Sie ein Upgrade durch
+
+Upgrades von Cloud Volumes ONTAP müssen über die Console durchgeführt werden. Sie sollten Cloud Volumes ONTAP nicht mit dem System Manager oder der CLI aktualisieren. Dies kann die Systemstabilität beeinträchtigen.
+
+link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Erfahren Sie, wie Sie ein Upgrade durchführen, wenn die Console Sie benachrichtigt"^].
+
+
+
+=== Unterstützter Upgrade-Pfad
+
+Sie können auf Cloud Volumes ONTAP 9.17.1 P1 von der Version 9.16.1 in AWS, Azure und Google Cloud aktualisieren. Die Console wird Sie auffordern, berechtigte Cloud Volumes ONTAP Systeme auf diese Version zu aktualisieren.
+
+
+
+=== Ausfallzeit
+
+* Die Aktualisierung eines Einzelknotensystems nimmt das System für bis zu 25 Minuten offline, während der die I/O unterbrochen wird.
+* Das Upgrade eines HA-Paar-Systems erfolgt unterbrechungsfrei und die I/O bleibt ununterbrochen. Während dieses unterbrechungsfreien Upgrade-Prozesses wird jeder Node nacheinander aktualisiert, um weiterhin I/O für Clients bereitzustellen.
+
